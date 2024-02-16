@@ -2,8 +2,8 @@
 Tracing Memory Leaks
 
 The idea is to store information about each allocation in a global data
-structure and dump its contents at the end of the program. Overloaded operator
-delete would remove entries from this data structure.
+structure and dump its contents at the end of the program. Overloaded
+operator delete would remove entries from this data structure.
 Since operator delete has only access to a pointer to previously allocated
 memory, we have to be able to reasonably quickly find the entry based
 on this pointer.
